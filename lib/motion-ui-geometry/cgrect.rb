@@ -28,7 +28,7 @@ class CGRect
       size.height == other.size.height
   end
 
-  def roughly_equal?(other, epsilon = Float::EPSILON)
+  def roughly_equal?(other, epsilon = Float::EPSILON_DEFAULT)
     unless other.is_a? CGRect
       raise TypeError, "Right operand for =~ must be a CGRect (got #{other})."
     end

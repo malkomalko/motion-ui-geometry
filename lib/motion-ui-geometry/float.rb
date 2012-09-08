@@ -1,6 +1,6 @@
 class Float
 
-  EPSILON = 0.00001
+  EPSILON_DEFAULT = 0.00001
 
   def clamp(min, max)
     max = 0 + max
